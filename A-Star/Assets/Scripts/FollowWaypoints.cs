@@ -32,16 +32,16 @@ public class FollowWaypoints : MonoBehaviour {
 
     public void GotoHeli() {
 
-        //g.AStar(currentNode, wps[0]);
+        //g.AStar(currentNode, wps[4]);
         //currentWP = 0;
-        GotoHere(0);
+        GotoHere(4);
     }
 
     public void GotoRuin() {
 
-        //g.AStar(currentNode, wps[7]);
+        //g.AStar(currentNode, wps[3]);
         //currentWP = 0;
-        GotoHere(7);
+        GotoHere(3);
     }
 
     public void GotoRock() {
@@ -53,9 +53,9 @@ public class FollowWaypoints : MonoBehaviour {
 
     public void GotoFactory() {
 
-        //g.AStar(currentNode, wps[4]);
+        //g.AStar(currentNode, wps[2]);
         //currentWP = 0;
-        GotoHere(4);
+        GotoHere(2);
     }
 
     void GotoHere(int value) {
