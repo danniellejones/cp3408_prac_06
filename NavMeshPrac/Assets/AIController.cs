@@ -6,6 +6,8 @@ using UnityEngine.AI;
 public class AIController : MonoBehaviour
 {
     public NavMeshAgent agent;
+    public GameObject target;
+
     // Get hold of the animator on the player
     Animator anim;
 
@@ -19,6 +21,9 @@ public class AIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Set destination as the target
+        agent.SetDestination(target.transform.position);
+
         // Test where player is to distination - to end walking animation
         if (agent.remainingDistance < 2)
         {
